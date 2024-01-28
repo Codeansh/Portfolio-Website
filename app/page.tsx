@@ -456,9 +456,9 @@ A consistent and self-motivated learner with excellent problem-solving skills an
                   <button onClick={() => setCurSkill('test')} className={`${curSkill === "test" ? act_button_class : pas_button_class}`} id="headlessui-tabs-tab-:r8:" role="tab" type="button" aria-selected="false" tabIndex={-1} data-headlessui-state="" aria-controls="headlessui-tabs-panel-:rd:">
                     Developer Tools
                   </button>
-                  <button onClick={() => setCurSkill('ui')} className={`${curSkill === "ui" ? act_button_class : pas_button_class}`} id="headlessui-tabs-tab-:r9:" role="tab" type="button" aria-selected="false" tabIndex={-1} data-headlessui-state="" aria-controls="headlessui-tabs-panel-:re:">
+                  {/* <button onClick={() => setCurSkill('ui')} className={`${curSkill === "ui" ? act_button_class : pas_button_class}`} id="headlessui-tabs-tab-:r9:" role="tab" type="button" aria-selected="false" tabIndex={-1} data-headlessui-state="" aria-controls="headlessui-tabs-panel-:re:">
                     Familiar With
-                  </button>
+                  </button> */}
                 </div>
                 <div className="mt-3"> {/*  */}
                   {curSkill === 'mobile' && <div className="rounded bg-white p-3 shadow-lg ring-white ring-opacity-60 border-2 border-[#000C24] border-double ring-offset-2 ring-offset-[#000C24] focus:outline-none focus:ring-2" id="headlessui-tabs-panel-:ra:" role="tabpanel" tabIndex={0} data-headlessui-state="selected" aria-labelledby="headlessui-tabs-tab-:r5:">
@@ -730,7 +730,7 @@ A consistent and self-motivated learner with excellent problem-solving skills an
                       </div>
                     </div>
                   </div>}
-                  {curSkill === 'ui' && <div className="rounded bg-white p-3 shadow-lg ring-white ring-opacity-60 border-2 border-[#000C24] border-double ring-offset-2 ring-offset-[#000C24] focus:outline-none focus:ring-2" id="headlessui-tabs-panel-:ra:" role="tabpanel" tabIndex={0} data-headlessui-state="selected" aria-labelledby="headlessui-tabs-tab-:r5:">
+                  {/* {curSkill === 'ui' && <div className="rounded bg-white p-3 shadow-lg ring-white ring-opacity-60 border-2 border-[#000C24] border-double ring-offset-2 ring-offset-[#000C24] focus:outline-none focus:ring-2" id="headlessui-tabs-panel-:ra:" role="tabpanel" tabIndex={0} data-headlessui-state="selected" aria-labelledby="headlessui-tabs-tab-:r5:">
                     <div className="flex flex-wrap">
                       <div className="relative rounded p-3 hover:bg-gray-100">
                         <img src="/icons/Kubernetes.svg" className="w-10 h-10 mx-auto mb-2 animate-pulse" alt="HTML" loading="lazy">
@@ -760,7 +760,7 @@ A consistent and self-motivated learner with excellent problem-solving skills an
                         </a>
                       </div>
                     </div>
-                  </div>}
+                  </div>} */}
                 </div>
               </div>
             </div>
