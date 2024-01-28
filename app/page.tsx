@@ -67,7 +67,7 @@ export default function Home() {
     <>
       <Navbar Page={curPage} />
 
-      <main className="bg-[#000C24] lg:bg-white lg:bg-[url('/images/landing-bg.svg')] -mt-28 bg-cover bg-no-repeat">
+      <main className="w-full bg-[#000C24] lg:bg-white lg:bg-[url('/images/landing-bg.svg')] -mt-28 bg-cover bg-no-repeat">
         <section onMouseEnter={() => setCurPage('home')} id="home" className='min-h-screen' >
 
 
