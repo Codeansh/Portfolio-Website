@@ -1,13 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
+@font-face {
+  font-family: sparton;
+  src: url('/Spartan-medium.ttf');
+}
+@font-face {
+  font-family: sparton-bold;
+  src: url('/Spartan-ExtraBold.ttf');
+}
+@font-face {
+  font-family: sparton-semibold;
+  src: url('/Spartan-SemiBold.ttf');
+}
+@font-face {
+  font-family: sparton-regular;
+  src: url('/Spartan-Regular.ttf');
+}
+.font-spartanRegular{
+  font-family: sparton-regular;
+}
+.font-sparton-regular{
+  font-family: sparton-regular;
+}
+.font-sparton {
+  font-family: sparton;
+}
+.font-spartanMedium{
+  font-family: sparton;
+}
+
+.font-sparton-semibold {
+  font-family: sparton-semibold;
+}
+.font-spartanSemiBold{
+  font-family: sparton-semibold;
+}
+.font-sparton-bold{
+  font-family:sparton-bold;
+}
+.font-spartanBold{
+font-family:sparton-bold;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+.stroke-white {
+  -webkit-text-stroke: 1px white;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,7 +61,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +70,129 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+:root {
+  
+  --swiper-pagination-color: #928A97!important ;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #F44336!important;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 5px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+ 
+}
+
+body {
+  position: relative;
+  min-height: screen;
+ 
+}
+.nav{
+  font-family: sparton;
+}
+
+.bg-home {
+  background-image: url('/images/landing-bg.svg'); /* Adjust the path based on your project structure */
+}
+
+.styl{
+    white-space: nowrap; border-width: 0px;
+  position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); 
+   clip: rect(0px, 0px, 0px, 0px);
+    white-space: nowrap;
+}
+.prosty{
+  transform: translate3d(0px, 0px, 0px);
+}
+.swipe{
+  transform: translate3d(-8px, 0px, 0px); transition-duration: 2ms;
+}
+
+.swiper-button-next {
+  background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50%;
+    width: 50px!important;
+    height: 64px!important;
+    top: 35%!important;
+    transform: rotate(180deg);
+    opacity:0.8!important;
+  color: transparent!important;
+     /* right: 10 !important; */
+    background-image: url('/icons/arrow-left.png')!important;
+    font-style: bold!important;
+}
+.swiper-button-prev {
+  background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50%;
+    width: 50px!important;
+    height: 64px!important;
+    top: 38%!important;
+
+  opacity:0.8!important;
+  color: transparent!important;
+     /* right: 10 !important; */
+    background-image: url('/icons/arrow-left.png')!important;
+    font-style: bold!important;
+}
+.swiper-button-next:hover {
+ 
+  opacity:1!important;
+  background-size: 120% auto!important;
+  color:transparent;
+
+  font-style:bold!important;
+}
+.swiper-button-prev:hover {
+  
+  opacity:1!important;
+  background-size: 120% auto!important;
+  color:transparent;
+
+  font-style:bold!important;
+}
+.swiper-scrollbar {
+
+  width: 0!important;
+  margin-top: 10px!important;
+  background: transparent; /* Change the background color */
+}
+
+.swiper-scrollbar-drag {
+  width: 0 !important;
+  background: green!important; /* Change the drag handle color */
+}
+
+.prose li{
+  padding-left: 0.375em;
+  margin: 8px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.prose li::marker {
+  color: #d1d5db;
+}
+.prose ul {
+  
+      padding-left: 1.625em;
+          display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em; */
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+.prose{
+  max-width: 65ch;
+  font-size: 1rem;
+    line-height: 1.75;
+   
+}
+.navbar{
+  
 }
