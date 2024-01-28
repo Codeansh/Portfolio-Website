@@ -117,7 +117,7 @@ export default function Home() {
               <h1 className="text-[#F44336] font-sparton-semibold text-2xl xl:text-3xl xl:leading-[35.84px] xl:font-bold font-bold mb-4 xl:mb-8 text-center md:text-left ">
                 About Me.
               </h1>
-              <p className="text-[#000C24]  font-sparton-regular text-base xl:text-2xl px-4 md:py-0 md:pl-0 lg:pr-0 text-center md:text-left leading-[40.8px] font-normal">
+              <p className="text-white md:text-[#000C24]  font-sparton-regular text-base xl:text-2xl px-4 md:py-0 md:pl-0 lg:pr-0 text-center md:text-left leading-[40.8px] font-normal">
 A consistent and self-motivated learner with excellent problem-solving skills and ability to perform well in a team. Passionate about web development and open to trying new ideas and approaches to improve and learn.              </p>
             </div>
           </div>
