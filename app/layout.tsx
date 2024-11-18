@@ -16,6 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <>
     <html>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YD8VJYGM1X"></script>
@@ -30,5 +31,6 @@ export default function RootLayout({
       <body className={inter.className}>{children}   
       </body>       
     </html>
+    </>
   )
 }
